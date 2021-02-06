@@ -1,6 +1,6 @@
 FROM node:15.8-alpine3.10 AS web
-WORKDIR /web
-ADD . /web
+WORKDIR /
+ADD . /
 RUN apk add gettext make
 RUN npm install && npm install --only=dev
 RUN make l10n-compile
@@ -11,7 +11,7 @@ WORKDIR /app
 
 ENV SET_MAX_VISITOR_NUMBER="1"
 
-COPY --from=web /web/dist ./dist
+COPY --from=web /dist ./dist
 ADD requirements.txt .
 RUN pip install -r requirements.txt
 ADD server.py /app
