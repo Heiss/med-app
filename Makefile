@@ -4,3 +4,6 @@ l10n-compile:
 	
 l10n-extract:
 	npm run localize-extract
+
+lock:
+	pipenv run pip freeze > requirements.txt

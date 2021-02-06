@@ -12,6 +12,7 @@ WORKDIR /app
 ENV SET_MAX_VISITOR_NUMBER="1"
 
 COPY --from=web /web/dist ./dist
+RUN pip install -r requirements.txt
 ADD /server.py .
 
 ENTRYPOINT [ "python", "server.py" ]
