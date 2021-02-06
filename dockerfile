@@ -1,8 +1,9 @@
 FROM node:15.8-alpine3.10 AS web
-WORKDIR /
-ADD . /
+WORKDIR /web
 RUN apk add gettext make
+COPY package*.json ./
 RUN npm install && npm install --only=dev
+COPY . .
 RUN make l10n-compile
 RUN npm run build
 
@@ -11,10 +12,10 @@ WORKDIR /app
 
 ENV SET_MAX_VISITOR_NUMBER="1"
 
-COPY --from=web /dist ./dist
-ADD requirements.txt .
+COPY --from=web /web/dist ./dist
+COPY requirements.txt .
 RUN pip install -r requirements.txt
-ADD server.py /app
+COPY server.py .
 EXPOSE 5000/tcp
 
 ENTRYPOINT [ "python", "server.py" ]
