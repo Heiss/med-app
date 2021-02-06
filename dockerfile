@@ -12,6 +12,6 @@ WORKDIR /app
 ENV SET_MAX_VISITOR_NUMBER="1"
 
 COPY --from=web /web/dist ./dist
-ADD /server.py /websocket.py ./
+ADD /server.py .
 
 ENTRYPOINT [ "python", "server.py" ]
