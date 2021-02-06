@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: easygettext\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:64
+msgid "Birthdate"
+msgstr "Birthdate"
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:49
+msgid "Can pass"
+msgstr "Can pass"
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:19
+msgid "Cancel"
+msgstr "Cancel"
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:6
+#: /home/physicx/projects/med-app/src/views/Patient.vue:2
+msgid "Close"
+msgstr "Close"
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:50
+msgid "Given patient had already maximal visitors."
+msgstr "Given patient had already maximal visitors."
+
+#: /home/physicx/projects/med-app/src/router/index.js:16
+msgid "Home"
+msgstr "Home"
+
+#: /home/physicx/projects/med-app/src/router/index.js:22
+msgid "Patient"
+msgstr "Patient"
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:54
+msgid "patientname"
+msgstr "patientname"
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:28
+msgid "Please fill out all data."
+msgstr "Please fill out all data."
+
+#: /home/physicx/projects/med-app/src/views/Settings.vue:29
+msgid "Select language"
+msgstr ""
+
+#: /home/physicx/projects/med-app/src/views/Patient.vue:20
+msgid "Send"
+msgstr "Send"
+
+#: /home/physicx/projects/med-app/src/router/index.js:28
+msgid "Settings"
+msgstr ""
+
+#: /home/physicx/projects/med-app/src/views/Settings.vue:2
+msgid "Settings for language"
+msgstr ""
+
+#: /home/physicx/projects/med-app/src/components/HelloWorld.vue:4
+msgid "Welcome"
+msgstr ""
