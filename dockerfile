@@ -15,5 +15,6 @@ COPY --from=web /web/dist ./dist
 ADD requirements.txt .
 RUN pip install -r requirements.txt
 ADD server.py /app
+EXPOSE 5000/tcp
 
 ENTRYPOINT [ "python", "server.py" ]
