@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container flex>
     <v-snackbar v-model="snackbar" :color="color">
       {{ status }}
       <template v-slot:action="{ attrs }">
@@ -13,6 +13,7 @@
         <v-text-field
           v-model="patientName"
           :label="$gettext('patientname')"
+          @keydown.enter="sendPatient"
         ></v-text-field></v-col
     ></v-row>
     <v-row justify="center">
