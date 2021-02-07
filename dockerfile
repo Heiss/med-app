@@ -8,14 +8,12 @@ RUN make l10n-compile
 RUN npm run build
 
 FROM python:3.8-alpine
-WORKDIR /app
-
+COPY requirements.txt /app/requirements.txt
 ENV SET_MAX_VISITOR_NUMBER="1"
 
-COPY --from=web /web/dist ./dist
-COPY requirements.txt .
+WORKDIR /app
 RUN pip install -r requirements.txt
-COPY server.py .
-EXPOSE 5000/tcp
 
-ENTRYPOINT [ "python", "server.py" ]
+COPY --from=web /web/dist ./dist
+COPY server.py /app
+EXPOSE 5000/tcp
