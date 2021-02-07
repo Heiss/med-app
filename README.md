@@ -4,7 +4,7 @@
 
 ## Docker setup
 
-````
+```
 docker run heiss/med:latest -p 8080:5000 SET_MAX_VISITOR_NUMBER=2
 ```
 
